@@ -4,13 +4,17 @@ plugins {
 }
 
 repositories {
-    mavenCentral()
+    // Use JCenter for resolving dependencies.
+    jcenter()
 }
+sourceCompatibility = 11
+targetCompatibility = 11
 
 dependencies {
     implementation "org.elasticsearch.client:elasticsearch-rest-high-level-client:7.12.0"
     // Use JUnit test framework.
     testImplementation 'junit:junit:4.13'
+
 }
 
 application {
